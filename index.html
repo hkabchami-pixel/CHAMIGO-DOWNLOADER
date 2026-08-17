@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>تحميل ChamiGo</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#16072d">
+
+  <title>ChamiGo - تحميل التطبيق</title>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -14,109 +20,188 @@
     body {
       margin: 0;
       min-height: 100vh;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #080b12, #101a2c);
+
+      padding: 25px;
+
+      font-family: Arial, Tahoma, sans-serif;
+
       color: white;
-      padding: 20px;
+
+      background:
+        radial-gradient(circle at top, #5720a5 0%, #1b0738 35%, #08040f 80%);
     }
 
     .card {
       width: 100%;
       max-width: 420px;
-      padding: 40px 25px;
+
       text-align: center;
-      background: rgba(255,255,255,0.06);
+
+      padding: 35px 25px;
+
+      background: rgba(255,255,255,0.07);
+
       border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 28px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+
+      border-radius: 30px;
+
+      box-shadow:
+        0 25px 60px rgba(0,0,0,0.45);
     }
 
     .logo {
-      width: 95px;
-      height: 95px;
-      margin: auto;
-      border-radius: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 42px;
-      font-weight: bold;
-      background: linear-gradient(135deg, #4c8dff, #7357ff);
-      box-shadow: 0 10px 30px rgba(76,141,255,0.35);
+      width: 150px;
+      height: 150px;
+
+      display: block;
+
+      margin: 0 auto 22px auto;
+
+      border-radius: 32px;
+
+      object-fit: cover;
+
+      box-shadow:
+        0 15px 35px rgba(121,42,255,0.45);
     }
 
     h1 {
-      margin: 22px 0 8px;
-      font-size: 32px;
+      margin: 5px 0 10px 0;
+
+      font-size: 36px;
+
+      font-weight: 800;
     }
 
-    .subtitle {
-      color: #aeb8ca;
+    .description {
+      margin-bottom: 28px;
+
+      color: #d0c7dc;
+
+      font-size: 16px;
+
       line-height: 1.8;
-      margin-bottom: 30px;
     }
 
-    .download {
+    .download-button {
       display: block;
+
       width: 100%;
-      padding: 17px;
-      border-radius: 16px;
-      text-decoration: none;
+
+      padding: 18px;
+
+      border-radius: 17px;
+
+      background:
+        linear-gradient(135deg, #8a2cff, #5720d8);
+
       color: white;
-      font-size: 18px;
+
+      text-decoration: none;
+
+      font-size: 19px;
+
       font-weight: bold;
-      background: linear-gradient(135deg, #287cff, #654cff);
-      box-shadow: 0 10px 30px rgba(40,124,255,0.3);
+
+      box-shadow:
+        0 12px 30px rgba(121,42,255,0.35);
+
+      transition: 0.2s;
     }
 
-    .download:active {
-      transform: scale(0.98);
+    .download-button:active {
+      transform: scale(0.97);
     }
 
-    .info {
+    .version {
       margin-top: 22px;
-      color: #8e9aae;
+
+      color: #aaa1b5;
+
       font-size: 14px;
     }
 
     .android {
       margin-top: 8px;
+
+      color: #776f82;
+
       font-size: 13px;
-      color: #68758b;
     }
+
+    .footer {
+      margin-top: 30px;
+
+      padding-top: 20px;
+
+      border-top:
+        1px solid rgba(255,255,255,0.10);
+
+      color: #776f82;
+
+      font-size: 12px;
+    }
+
   </style>
+
 </head>
 
 <body>
 
   <div class="card">
 
-    <div class="logo">C</div>
+    <img
+      src="logo.png"
+      class="logo"
+      alt="ChamiGo Logo"
+    >
 
     <h1>ChamiGo</h1>
 
-    <div class="subtitle">
+    <div class="description">
+
       حمّل تطبيق ChamiGo على هاتف Android
+
       <br>
-      بسرعة وسهولة
+
+      واستمتع بتجربة سريعة وسهلة
+
     </div>
 
-    <a class="download" href="app-release.apk" download>
-      تحميل التطبيق APK
+    <a
+      href="app-release.apk"
+      class="download-button"
+      download
+    >
+
+      ⬇ تحميل ChamiGo APK
+
     </a>
 
-    <div class="info">
+    <div class="version">
+
       أحدث إصدار من ChamiGo
+
     </div>
 
     <div class="android">
+
       متوفر لأجهزة Android
+
+    </div>
+
+    <div class="footer">
+
+      ChamiGo © 2026
+
     </div>
 
   </div>
 
 </body>
+
 </html>

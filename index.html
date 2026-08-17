@@ -13,76 +13,106 @@
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0b0b;
-      color: white;
       min-height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      text-align: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #080b12, #101a2c);
+      color: white;
+      padding: 20px;
     }
 
-    .box {
-      width: 90%;
+    .card {
+      width: 100%;
       max-width: 420px;
-      background: #171717;
       padding: 40px 25px;
-      border-radius: 25px;
+      text-align: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      width: 95px;
+      height: 95px;
+      margin: auto;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #4c8dff, #7357ff);
+      box-shadow: 0 10px 30px rgba(76,141,255,0.35);
     }
 
     h1 {
-      font-size: 34px;
-      margin: 0 0 15px;
+      margin: 22px 0 8px;
+      font-size: 32px;
     }
 
-    p {
-      color: #bdbdbd;
-      font-size: 17px;
+    .subtitle {
+      color: #aeb8ca;
       line-height: 1.8;
+      margin-bottom: 30px;
     }
 
     .download {
       display: block;
-      margin-top: 30px;
-      padding: 18px;
-      background: white;
-      color: black;
+      width: 100%;
+      padding: 17px;
+      border-radius: 16px;
       text-decoration: none;
-      border-radius: 15px;
-      font-size: 19px;
+      color: white;
+      font-size: 18px;
       font-weight: bold;
+      background: linear-gradient(135deg, #287cff, #654cff);
+      box-shadow: 0 10px 30px rgba(40,124,255,0.3);
     }
 
     .download:active {
-      transform: scale(0.97);
+      transform: scale(0.98);
     }
 
-    .note {
-      margin-top: 20px;
-      color: #777;
+    .info {
+      margin-top: 22px;
+      color: #8e9aae;
+      font-size: 14px;
+    }
+
+    .android {
+      margin-top: 8px;
       font-size: 13px;
+      color: #68758b;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="box">
+  <div class="card">
+
+    <div class="logo">C</div>
 
     <h1>ChamiGo</h1>
 
-    <p>
-      حمّل تطبيق ChamiGo للأندرويد
+    <div class="subtitle">
+      حمّل تطبيق ChamiGo على هاتف Android
       <br>
-      آخر إصدار متوفر
-    </p>
+      بسرعة وسهولة
+    </div>
 
-    <a class="download" href="./app-release.apk" download>
-      تحميل ChamiGo APK
+    <a class="download" href="app-release.apk" download>
+      تحميل التطبيق APK
     </a>
 
-    <div class="note">
+    <div class="info">
+      أحدث إصدار من ChamiGo
+    </div>
+
+    <div class="android">
       متوفر لأجهزة Android
     </div>
 
